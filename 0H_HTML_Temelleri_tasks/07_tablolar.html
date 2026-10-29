@@ -1,0 +1,63 @@
+<!-- GÖREV 7 – Tablolar (Bölüm 1.7)
+Görev: Bir sınav takvimi ve bir nöbet çizelgesi kurun.
+
+Kenar çizgili tablo (border="1"), adı Sınav Takvimi; başlık hücreleri Ders ve Tarih.
+Gövdede iki satır: Matematik – 20 Ekim, Fizik – 21 Ekim.
+Alt satır: Toplam 2 sınav; bu hücre iki sütunu kaplasın.
+İkinci kenar çizgili tablo (border="1"): başlıklar Gün ve Nöbetçi; Pazartesi ve Salı satırlarında Ali iki satırı birden kaplasın.
+Beklenen sonuç: İki tablo da kenar çizgileriyle görünür; «Toplam 2 sınav» tablonun tam genişliğinde; «Ali» iki satır boyunca tek hücre. -->
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablolar</title>
+</head>
+<body>
+    <h1>Tablolar</h1>
+    <h2>1. Tablo</h2>
+    <table border="1">
+        <caption>Sınav Takvimi</caption>
+        <thead>
+            <tr>
+                <th>Ders</th>
+                <th>Tarih</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>Matematik</td>
+              <td>20 Ekim</td>
+          </tr>
+          <tr>
+              <td>Fizik</td>
+              <td>21 Ekim</td>
+          </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="2">Toplam 2 sınav</td>
+        </tfoot>
+    </table>
+    <hr>
+    <h2>2. Tablo</h2>
+    <table border="1">
+        <caption>Nöbet</caption>
+        <thead>
+            <tr>
+                <th>Gün</th>
+                <th>Nöbetçi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pazartesi</td>
+                <td rowspan="2">Ali</td>
+            </tr>
+            <tr>
+                <td>Salı</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
